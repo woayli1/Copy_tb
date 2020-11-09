@@ -5,11 +5,16 @@ import android.util.Log;
 import android.view.KeyEvent;
 
 import com.blankj.utilcode.util.ToastUtils;
+import com.google.android.material.navigation.NavigationView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    @BindView(R.id.navigation)
+    NavigationView navigation;
     private long clickTime = 0; //记录第一次点击的时间
 
     private String TAG = "MainActivity";
@@ -18,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
     }
 
     public boolean onKeyDown(int keyCode, KeyEvent event) {

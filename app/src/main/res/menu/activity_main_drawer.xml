@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_setting"
+            android:title="安全设置" />
+        <item
+            android:id="@+id/my_transaction"
+            android:title="我的收益" />
+        <item
+            android:id="@+id/my_release_a_task"
+            android:title="我的任务" />
+        <item
+            android:id="@+id/my_transaction_list"
+            android:title="交易记录" />
+        <item
+            android:id="@+id/my_browser"
+            android:title="分享邀请" />
+
+        <item
+            android:id="@+id/my_share"
+            android:title="邀请记录" />
+        <item
+            android:id="@+id/my_version"
+            android:title="版本号" />
+    </group>
+</menu>
